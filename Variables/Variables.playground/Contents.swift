@@ -7,7 +7,7 @@ dateFormatter.dateFormat = "dd/MM/yyyy"
 
 let city = "Istanbul"
 let country = "Turkey"
-let telephone = 90_534_627_24_17
+let telephone = 90_111_111_11_11
 let postalCode = 34344
 let email = "ykpacs@gmail.com"
 let job = "Computer Engineer"
