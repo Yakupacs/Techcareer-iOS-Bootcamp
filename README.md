@@ -8,4 +8,4 @@
 
 
 ## Table of Contents
-1. [Homework](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Variables.playground) (Variables)<br>
+1. [Homework](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework1/Variables.playground) (Variables)<br>
