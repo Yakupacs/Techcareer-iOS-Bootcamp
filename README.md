@@ -8,5 +8,5 @@
 
 
 ## Table of Contents
-1. [1.Homework](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework1/Variables.playground) (Variables)<br>
-2. [1.Lesson](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson1) (Loops, Optional, OOP)<br>
+1. [Homework 1](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework1/Variables.playground) (Variables)<br>
+2. [Lesson 1](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson1) (Loops, Optional, OOP)<br>
