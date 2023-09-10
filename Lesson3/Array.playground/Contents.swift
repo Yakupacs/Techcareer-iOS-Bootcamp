@@ -129,3 +129,17 @@ for s in s2
 {
     print("Sorted4 -> Id: \(s.id!) - Name: \(s.name!) - Price: \(s.price!)₺ - Rate: \(s.rate!)")
 }
+
+print("\n-------------------Name Descending-------------------")
+var n1 = foods.sorted(by: { $0.name! > $1.name! }) // Descending: DESC
+for s in s1
+{
+    print("Sorted5  -> Id: \(s.id!) - Name: \(s.name!) - Price: \(s.price!)₺ - Rate: \(s.rate!)")
+}
+
+print("\n-------------------Name Ascending-------------------")
+var n2 = foods.sorted(by: { $0.name! < $1.name! }) // Descending: ASC
+for s in s2
+{
+    print("Sorted6 -> Id: \(s.id!) - Name: \(s.name!) - Price: \(s.price!)₺ - Rate: \(s.rate!)")
+}
