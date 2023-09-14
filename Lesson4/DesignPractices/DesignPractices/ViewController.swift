@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(named: "mainColor")
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white,
+                                          .font: UIFont(name: "Pacifico-Regular", size: 25)!]
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.compactAppearance = appearance
