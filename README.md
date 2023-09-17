@@ -16,3 +16,5 @@
 6. [Lesson 4](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson4) (Design, Navigationbar, Fonts, UIStackView, Constraints)<br>
 7. [Lesson 5](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson5) (Present View Controller, Multiple View Controller)<br>
 8. [Homework 3](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework3/LampApp) (Page Design, Constraints)<br>
+9. [Lesson 6](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson6/TabbarLesson) (UITabBar, TabBarItem)<br>
+10. [Homework 4](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework4) (Present View Controller, Perform Segue)<br>
