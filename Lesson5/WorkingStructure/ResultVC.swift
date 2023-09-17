@@ -13,4 +13,7 @@ class ResultVC: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func closeFunc(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }
