@@ -20,9 +20,12 @@ class ViewController: UIViewController {
 	@IBOutlet weak var slider: UISlider!
 	@IBOutlet weak var label4: UILabel!
 	@IBOutlet weak var stepper: UIStepper!
+	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+//		activityIndicator.hidesWhenStopped = true
+		
 	}
 
 	// MARK: - Segment Control Value Changed
@@ -40,7 +43,7 @@ class ViewController: UIViewController {
 	
 	// MARK: - Slider Value Changed
 	@IBAction func sliderValueChanged(_ sender: UISlider) {
-		let selectedIndex = sender.value
+		let selectedIndex = Int(sender.value)
 		label4.text = "Selected Slider: \(selectedIndex)"
 	}
 	
@@ -50,5 +53,12 @@ class ViewController: UIViewController {
 		label1.text = "Selected Stepper: \(selectedIndex)"
 	}
 	
+	@IBAction func startAction(_ sender: Any) {
+		activityIndicator.startAnimating()
+	}
+	
+	@IBAction func stopAction(_ sender: Any) {
+		activityIndicator.stopAnimating()
+	}
 }
 
