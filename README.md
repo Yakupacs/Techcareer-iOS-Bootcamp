@@ -20,7 +20,9 @@
 10. [Homework 4](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework4) (Present View Controller, Perform Segue)<br>
 11. [Lesson 7](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson7) (UISwitch, UISegmentedControl, UISlider, UIStepper, UIActivityIndicatorView, UIScrollView)<br>
 12. [Homework 5](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework5) (Calculator)<br>
+
 <img width="200" src="https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/assets/73075252/54af2bca-cb49-4b2f-af46-1c3bead20742">
+
 13. [Lesson 8](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson8) (Date Picker, Time Picker, UIAlertController)<br>
 14. [Lesson 9](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson9) (UISearchBar, UITableView, trailingSwipeActionsConfigurationForRowAt)<br>
 15. [Lesson 10](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson10) (UITableViewCell, UICollectionViewCell)<br>
