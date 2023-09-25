@@ -28,4 +28,4 @@
 15. [Lesson 10](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson10) (UITableViewCell, UICollectionViewCell)<br>
 16. [Homework 6]() (Threads App Design)<br>
 
-<img width="200" src="https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/assets/73075252/7863f2bd-f313-4c55-90de-99c63efbca60">
+<img width="200" src="https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/assets/73075252/7f692fcc-23b1-4b10-a01b-22dacf666faf">
