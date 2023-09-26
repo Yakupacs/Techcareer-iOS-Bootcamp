@@ -16,6 +16,8 @@ class ContactDetail: UIViewController, UITextFieldDelegate {
 	
 	var contact: Contact?
 	
+	var viewModel = ContactDetailViewModel()
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -33,7 +35,7 @@ class ContactDetail: UIViewController, UITextFieldDelegate {
     }
 	
 	@IBAction func updateAction(_ sender: Any) {
-		print("First Name: \(firstNameTxtfield.text!)\nLast Name: \(lastNameTxtfield.text!)\nPhone Number: \(phoneNumberTxtfield.text!)")
+		viewModel.update(kisi_id: Int(phoneNumberTxtfield.text!)!, kisi_ad: firstNameTxtfield.text!, kisi_tel: phoneNumberTxtfield.text!)
 	}
 	
 	func textFieldDidChangeSelection(_ textField: UITextField) {

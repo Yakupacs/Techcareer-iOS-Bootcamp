@@ -15,6 +15,8 @@ class ContactRegisterVC: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var lastNameTxtfield: UITextField!
 	@IBOutlet weak var phoneNumberTxtfield: UITextField!
 	
+	var viewModel = ContactRegisterViewModel()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -26,7 +28,7 @@ class ContactRegisterVC: UIViewController, UITextFieldDelegate {
     }
 
 	@IBAction func saveAction(_ sender: Any) {
-		print("First Name: \(firstNameTxtfield.text!)\nLast Name: \(lastNameTxtfield.text!)\nPhone Number: \(phoneNumberTxtfield.text!)")
+		viewModel.save(kisi_ad: firstNameTxtfield.text!, kisi_tel: phoneNumberTxtfield.text!)
 	}
 	
 	func textFieldDidChangeSelection(_ textField: UITextField) {
