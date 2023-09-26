@@ -12,21 +12,21 @@ import RxSwift
 class ContactDaoRepository{
 	var contactList = BehaviorSubject<[Contact]>(value: [Contact]())
 	
-	func save(kisi_ad: String, kisi_tel: String)
+	func save(id: Int, name: String, surname: String, phone: String)
 	{
-		print("First Name: \(kisi_ad), Phone Number: \(kisi_tel)")
+		print("First Name: \(name), Phone Number: \(phone)")
 	}
 	
-	func update(kisi_id: Int, kisi_ad: String, kisi_tel: String) {
-		print("\(kisi_id)\n\(kisi_ad)\n\(kisi_tel)")
+	func update(id: Int, name: String, surname: String, phone: String) {
+		print("\(id)\n\(name)\n\(surname)")
 	}
 	
 	func search(searchText: String){
 		print("Contact Search: \(searchText)")
 	}
 	
-	func delete(phoneNumber: String){
-		print("Contact Delete: \(phoneNumber)")
+	func delete(id: Int){
+		print("Contact Delete: \(id)")
 	}
 	
 	func contactUpload(){

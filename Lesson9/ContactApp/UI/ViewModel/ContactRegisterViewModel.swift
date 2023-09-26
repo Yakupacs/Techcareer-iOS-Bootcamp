@@ -10,8 +10,9 @@ import Foundation
 class ContactRegisterViewModel{
 	var krepo = ContactDaoRepository()
 	
-	func save(kisi_ad: String, kisi_tel: String)
+	
+	func save(id: Int, name: String, surname: String, phone: String)
 	{
-		krepo.save(kisi_ad: kisi_ad, kisi_tel: kisi_tel)
+		krepo.save(id: id, name: name, surname: surname, phone: phone)
 	}
 }

@@ -75,7 +75,7 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
 			}
 			let noButton = UIAlertAction(title: "Cancel", style: .cancel)
 			let yesButton = UIAlertAction(title: "Yes", style: .destructive){ _ in
-				self.viewModel.delete(phoneNumber: self.contacts[indexPath.row].phoneNumber ?? "")
+				self.viewModel.delete(id: self.contacts[indexPath.row].id!)
 			}
 			alert.addAction(noButton)
 			alert.addAction(okButton)

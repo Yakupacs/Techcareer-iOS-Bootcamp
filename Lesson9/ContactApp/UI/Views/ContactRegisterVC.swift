@@ -28,7 +28,7 @@ class ContactRegisterVC: UIViewController, UITextFieldDelegate {
     }
 
 	@IBAction func saveAction(_ sender: Any) {
-		viewModel.save(kisi_ad: firstNameTxtfield.text!, kisi_tel: phoneNumberTxtfield.text!)
+		viewModel.save(id: 1, name: firstNameTxtfield.text!, surname: lastNameTxtfield.text!, phone: phoneNumberTxtfield.text!)
 	}
 	
 	func textFieldDidChangeSelection(_ textField: UITextField) {
