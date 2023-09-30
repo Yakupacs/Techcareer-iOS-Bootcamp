@@ -29,3 +29,7 @@
 16. [Homework 6]() (Threads App Design)<br>
 
 <img width="200" src="https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/assets/73075252/7f692fcc-23b1-4b10-a01b-22dacf666faf">
+
+17. [Lesson 11](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson11) (MVVM)<br>
+18. [Lesson 12](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson12) (UserDefaults, SQLite, CoreData)<br>
+
