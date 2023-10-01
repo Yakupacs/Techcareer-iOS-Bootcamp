@@ -25,11 +25,12 @@
 
 13. [Lesson 8](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson8) (Date Picker, Time Picker, UIAlertController)<br>
 14. [Lesson 9](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson9) (UISearchBar, UITableView, trailingSwipeActionsConfigurationForRowAt)<br>
-15. [Lesson 10](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson10) (UITableViewCell, UICollectionViewCell)<br>
+15. [Lesson 10](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson_10) (UITableViewCell, UICollectionViewCell)<br>
 16. [Homework 6]() (Threads App Design)<br>
 
 <img width="200" src="https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/assets/73075252/7f692fcc-23b1-4b10-a01b-22dacf666faf">
 
-17. [Lesson 11](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson11) (MVVM)<br>
-18. [Lesson 12](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson12) (UserDefaults, SQLite, CoreData)<br>
+17. [Lesson 11](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson_11) (MVVM)<br>
+18. [Lesson 12](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Lesson_12) (UserDefaults, SQLite, CoreData)<br>
+18. [Homework 7](https://github.com/Yakupacs/Techcareer-iOS-Bootcamp/tree/main/Homework7) (SQLite, MVVM)<br>
 
