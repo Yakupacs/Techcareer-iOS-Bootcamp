@@ -15,21 +15,48 @@ class ContactDaoRepository{
 	
 	let context = appDelegate.persistentContainer.viewContext
 	
-	func save(name: String, surname: String, phone: String)
-	{
+	func save(name: String, surname: String, phone: String){
+		let person = ContactModel(context: context)
+		person.person_name = name
+		person.person_surname = surname
+		person.person_tel = phone
+		
+		appDelegate.saveContext()
 	}
 	
 	func update(contact: ContactModel, name: String, surname: String, phone: String) {
+		contact.person_name = name
+		contact.person_surname = surname
+		contact.person_tel = phone
+		
+		appDelegate.saveContext()
 	}
 	
 	func search(searchText: String){
+		do {
+			let fr = ContactModel.fetchRequest()
+			fr.predicate = NSPredicate(format: "person_name CONTAINS[c] %@", searchText)
+			
+			let list = try context.fetch(fr)
+			
+			contactList.onNext(list)
+		} catch{
+			print(error.localizedDescription)
+		}
 	}
 	
 	func delete(contact: ContactModel){
+		context.delete(contact)
+		
+		appDelegate.saveContext()
 	}
 	
 	func contactUpload(){
-
-//		contactList.onNext(contacts)
+		do {
+			let list = try context.fetch(ContactModel.fetchRequest())
+			contactList.onNext(list)
+		} catch{
+			print(error.localizedDescription)
+		}
 	}
 }

@@ -14,7 +14,7 @@ class ContactDetail: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var phoneNumberTxtfield: UITextField!
 	@IBOutlet weak var updateButton: UIBarButtonItem!
 	
-	var contact: ContactModel?
+	var contact: Kisiler?
 	
 	var viewModel = ContactDetailViewModel()
 	
@@ -26,16 +26,15 @@ class ContactDetail: UIViewController, UITextFieldDelegate {
 		phoneNumberTxtfield.delegate = self
 		
 		if let contact = contact {
-			firstNameTxtfield.text = contact.person_name
-			lastNameTxtfield.text = contact.person_surname
-			phoneNumberTxtfield.text = contact.person_tel
+			firstNameTxtfield.text = contact.kisi_ad
+			phoneNumberTxtfield.text = contact.kisi_tel
 		}
 		
 		updateButton.isEnabled = false
     }
 	
 	@IBAction func updateAction(_ sender: Any) {
-		viewModel.update(contact: contact ?? ContactModel(), name: firstNameTxtfield.text!, surname: lastNameTxtfield.text!, phone: phoneNumberTxtfield.text!)
+		viewModel.update(id: Int((contact?.kisi_id)!)!, name: firstNameTxtfield.text!, phone: phoneNumberTxtfield.text!)
 	}
 	
 	func textFieldDidChangeSelection(_ textField: UITextField) {

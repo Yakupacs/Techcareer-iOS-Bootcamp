@@ -13,8 +13,8 @@ class HomepageVC: UIViewController {
 	@IBOutlet weak var searchBar: UISearchBar!
 	@IBOutlet weak var tableView: UITableView!
 	
-	var contacts: [ContactModel] = []
-	var selectedContact: ContactModel?
+	var contacts: [Kisiler] = []
+	var selectedContact: Kisiler?
 	
 	var viewModel = HomepageViewModel()
 	
@@ -27,7 +27,9 @@ class HomepageVC: UIViewController {
 		
 		_ = viewModel.contactList.subscribe(onNext: { liste in
 			self.contacts = liste
-			self.tableView.reloadData()
+			DispatchQueue.main.async {
+				self.tableView.reloadData()
+			}
 		})
 		
 	}
@@ -38,10 +40,8 @@ class HomepageVC: UIViewController {
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if segue.identifier == "contactDetail" {
-			if let contact = sender as? ContactModel{
-				let vc = segue.destination as! ContactDetail
-				vc.contact = contact
-			}
+			let vc = segue.destination as! ContactDetail
+			vc.contact = selectedContact
 		}
 	}
 }
@@ -54,8 +54,8 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ContactCellTableViewCell {
-			cell.nameSurnameLabel.text = "\(contacts[indexPath.row].person_name!) \(contacts[indexPath.row].person_surname!)"
-			cell.phoneNumberLabel.text = contacts[indexPath.row].person_tel
+			cell.nameSurnameLabel.text = "\(contacts[indexPath.row].kisi_ad!)"
+			cell.phoneNumberLabel.text = contacts[indexPath.row].kisi_tel
 			return cell
 		}
 		return UITableViewCell()
@@ -72,12 +72,16 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
 			
 			let alert = UIAlertController(title: "Warning!", message: "Are you sure to delete the user?", preferredStyle: .alert)
 			let okButton = UIAlertAction(title: "Delete", style: .destructive) { _ in
-				self.viewModel.delete(contact: self.contacts[indexPath.row])
-
+				self.contacts.remove(at: indexPath.row)
+				tableView.reloadData()
 			}
 			let noButton = UIAlertAction(title: "Cancel", style: .cancel)
+			let yesButton = UIAlertAction(title: "Yes", style: .destructive){ _ in
+				self.viewModel.delete(id: Int(self.contacts[indexPath.row].kisi_id!)!)
+			}
 			alert.addAction(noButton)
 			alert.addAction(okButton)
+			alert.addAction(yesButton)
 			self.present(alert, animated: true)
 		}
 		let addAction = UIContextualAction(style: .normal, title: "Details") { contextualAction, view, bool in
@@ -92,10 +96,6 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
 // MARK: - UISearchBarDelegate
 extension HomepageVC: UISearchBarDelegate {
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-		if searchText == ""{
-			viewModel.contactUpload()
-		}else{
-			viewModel.search(searchText: searchText)
-		}
+		viewModel.search(searchText: searchText)
 	}
 }
