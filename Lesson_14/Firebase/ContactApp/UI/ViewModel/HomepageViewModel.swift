@@ -20,7 +20,7 @@ class HomepageViewModel{
 		krepo.search(searchText: searchText)
 	}
 	
-	func delete(id: Int){
+	func delete(id: String){
 		krepo.delete(id: id)
 		contactUpload()
 	}

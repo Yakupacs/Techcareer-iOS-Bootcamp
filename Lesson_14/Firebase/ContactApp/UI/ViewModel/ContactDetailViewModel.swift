@@ -10,7 +10,7 @@ import Foundation
 class ContactDetailViewModel{
 	var krepo = ContactDaoRepository()
 	
-	func update(id: Int, name: String, surname: String, phone: String) {
+	func update(id: String, name: String, surname: String, phone: String) {
 		krepo.update(id: id, name: name, surname: surname, phone: phone)
 	}
 }

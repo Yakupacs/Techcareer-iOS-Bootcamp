@@ -94,6 +94,10 @@ extension HomepageVC: UITableViewDelegate, UITableViewDataSource {
 // MARK: - UISearchBarDelegate
 extension HomepageVC: UISearchBarDelegate {
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-		viewModel.search(searchText: searchText)
+		if searchText == ""{
+			viewModel.contactUpload()
+		}else{
+			viewModel.search(searchText: searchText)
+		}
 	}
 }

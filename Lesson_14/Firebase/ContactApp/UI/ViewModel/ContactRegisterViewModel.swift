@@ -11,8 +11,8 @@ class ContactRegisterViewModel{
 	var krepo = ContactDaoRepository()
 	
 	
-	func save(id: Int, name: String, surname: String, phone: String)
+	func save(name: String, surname: String, phone: String)
 	{
-		krepo.save(id: id, name: name, surname: surname, phone: phone)
+		krepo.save(name: name, surname: surname, phone: phone)
 	}
 }
